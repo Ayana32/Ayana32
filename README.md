@@ -38,7 +38,6 @@ NLP Engineer | ESG & Multilingual NLP
 ## 📄 Publication
 
 **Kim, M. (2023).** LSTM-based freight volume forecasting. *ACK 2023.*  
-→ R² = 0.9538
 
 ---
 
