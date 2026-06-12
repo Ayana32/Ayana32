@@ -43,7 +43,7 @@ NLP Engineer | ESG & Multilingual NLP
 
 ## 📬 Contact
 
-[LinkedIn](https://linkedin.com/in/) · misunkim@sheffield.ac.uk## Hi there 👋
+[LinkedIn](https://linkedin.com/in/) · misunkim@sheffield.ac.uk
 
 <!--
 **Ayana32/Ayana32** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
