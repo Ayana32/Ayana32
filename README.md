@@ -1,25 +1,49 @@
 # Hi, I'm Misun 👋
 
-MSc Speech and Language Processing @ University of Sheffield (2025–2026)  
+MSc Speech and Natural Language Processing @ University of Sheffield (2025–2026)  
 NLP Engineer | ESG & Multilingual NLP
-
+Building multilingual NLP systems through LLM alignment, representation steering, and retrieval-augmented generation.
 ---
 
 ## 🔍 About Me
 
-- 🎓 MSc in Speech and Language Processing, University of Sheffield (graduating Sep 2026)
-- 🌏 Multilingual: Korean (native) · English · Spanish · Kazakh · Japanese
-- 🔬 Dissertation: Cross-lingual generalisation of steering vectors for sycophancy reduction (Qwen2.5-7B)
-- 💼 ESG consulting (GRI, TCFD, ISSB) · data operations · NLP research
-- 📍 Based in Sheffield, UK
+I am an MSc Speech and Natural Language Processing at the University of Sheffield with experience spanning AI research, ESG consulting, and data operations.
+
+My research focuses on improving the reliability and multilingual capability of large language models through representation steering and cross-lingual evaluation. I am particularly interested in building practical NLP systems that bridge cutting-edge research and real-world applications.
+
+Current interests
+
+Large Language Models (LLMs)
+LLM Alignment
+Multilingual NLP
+Retrieval-Augmented Generation (RAG)
+Representation Learning
+AI for ESG
+
+📍 Sheffield, United Kingdom
 
 ---
 
+## Current Research
+
+Cross-Lingual Representation Steering for LLM Alignment
+
+- Contrastive Activation Addition (CAA)
+- Qwen2.5-7B-Instruct
+- English | Korean | Spanish | Kazakh
+- Geometry Analysis
+- HPC Experiments
+
+Status:
+🚧 Ongoing MSc Dissertation (Expected September 2026)
+
+--- 
+
 ## 🛠️ Tech Stack
 
-**NLP & ML:** Python · PyTorch · HuggingFace Transformers · spaCy · NLTK  
+**NLP & ML:** Python · PyTorch · HuggingFace Transformers · Natural Language Processing (NLP) · Large Language Models (LLMs)
 **RAG & Retrieval:** ChromaDB · BM25 · cross-encoder reranking  
-**Data & Infra:** PySpark · SQL · Docker · W&B · Git  
+**Data & Infra:** High Performance Computing (HPC) · SQL · Docker · W&B · Git · Streamlit
 **Languages:** Korean · English · Spanish · Kazakh
 
 ---
@@ -37,13 +61,13 @@ NLP Engineer | ESG & Multilingual NLP
 
 ## 📄 Publication
 
-**Kim, M. (2023).** LSTM-based freight volume forecasting. *ACK 2023.*  
+**Kim, M. (2023).** LSTM-based freight volume forecasting. *ACK 2023.* First Author
 
 ---
 
 ## 📬 Contact
 
-[LinkedIn](https://linkedin.com/in/) · misunkim@sheffield.ac.uk
+[LinkedIn](https://linkedin.com/in/) · misunkim2732@gmail.com
 
 <!--
 **Ayana32/Ayana32** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
