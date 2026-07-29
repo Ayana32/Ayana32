@@ -1,76 +1,107 @@
 # Hi, I'm Misun 👋
 
-**NLP / ML Engineer** focused on multilingual LLMs, retrieval-augmented generation, and evaluation-driven AI systems.
+**NLP / ML Engineer & Researcher** focused on multilingual LLMs, cross-lingual alignment, representation steering, and evaluation-driven AI.
 
-MSc Speech and Natural Language Processing @ University of Sheffield (2025–2026)
-📍 Sheffield, United Kingdom
+🎓 MSc Speech and Natural Language Processing @ University of Sheffield (2025–2026)
 
 ---
 
 ## 🔍 About Me
 
-I am an MSc Speech and Natural Language Processing candidate at the University of Sheffield, with experience across AI research, ESG consulting, and data operations.
+I am an MSc Speech and Natural Language Processing candidate at the University of Sheffield, interested in understanding how large language models represent and transfer behaviour across languages.
 
-My work focuses on building reliable and practical NLP systems, especially for multilingual large language models, representation steering, retrieval-augmented generation, and evaluation-driven AI applications.
+My current research investigates **cross-lingual transfer of LLM alignment interventions**, with a particular focus on representation steering, multilingual model behaviour, and the relationship between internal representations and downstream behavioural effects.
 
-I am particularly interested in bridging research and engineering: turning ideas from LLM alignment, cross-lingual evaluation, and information retrieval into systems that can be tested, deployed, and used in real-world settings.
-
-### Current Research
-
-**Cross-Lingual Representation Steering for LLM Alignment**
-MSc dissertation project investigating whether activation steering methods transfer across languages and how they affect model behaviour.
-
-- Contrastive Activation Addition (CAA)
-- Qwen2.5-7B-Instruct
-- English | Korean | Spanish | Kazakh
-- Cross-lingual evaluation
-- Geometry analysis
-- HPC-based experiments
-
-*Status: 🚧 Ongoing MSc Dissertation — expected September 2026*
-
-### Current Interests
-
-- Large Language Models and LLM alignment
-- Multilingual NLP and cross-lingual evaluation
-- Retrieval-augmented generation and information retrieval
-- Representation steering and model behaviour analysis
-- Evaluation-driven ML systems
-- Applied AI for ESG and domain-specific documents
+Alongside research, I build evaluation-driven NLP systems spanning information retrieval, domain-specific language applications, and ML infrastructure.
 
 ---
 
-## 🛠️ Tech Stack
+## 📊 Current Research
 
-**NLP & Machine Learning**
-Python · PyTorch · Hugging Face Transformers · scikit-learn · Natural Language Processing · Large Language Models
+### Cross-Lingual Representation Steering for LLM Alignment
 
-**RAG & Retrieval**
-ChromaDB · BM25 · hybrid search · reciprocal rank fusion (RRF) · LLM-based verification
+MSc dissertation investigating how behavioural alignment interventions transfer across languages, and why similar internal steering directions can produce different behavioural effects across linguistic settings.
 
-**Data & Infrastructure**
-SQL · Docker · Streamlit · W&B · Git · Linux · High Performance Computing
+* **Method:** Contrastive Activation Addition (CAA)
+* **Models:** Qwen3.5-9B · Gemma4-12B-IT
+* **Languages:** English · Italian · Chinese · Korean · Kazakh
+* **Focus:** Cross-lingual transfer · LLM alignment · Sycophancy · Representation geometry
+* **Analysis:** Layer-wise steering sweeps · Cross-lingual geometry · Behavioural evaluation · Random and permutation controls
+* **Planned extension:** TruthfulQA evaluation to examine whether cross-lingual steering patterns generalise beyond sycophancy
+* **Infrastructure:** PyTorch · Hugging Face Transformers · SLURM · Linux HPC
+* **Status:** 🚧 Ongoing MSc dissertation — expected September 2026
+* **Repository:** Code available upon request for research collaboration
 
-**Languages**
-Korean · English · Spanish · Kazakh
+---
+
+## 🎯 Research Interests
+
+* Multilingual NLP and cross-lingual transfer
+* LLM alignment and model behaviour
+* Representation learning, steering, and interpretability
+* Reliable evaluation of multilingual language models
+
+---
+
+## 🛠️ Technical Skills
+
+**Machine Learning & NLP:** Python · PyTorch · Hugging Face Transformers · scikit-learn
+
+**LLM Research:** Representation steering · Activation analysis · Multilingual evaluation · Behavioural evaluation
+
+**HPC & Infrastructure:** SLURM · Linux · Docker · Git · Weights & Biases
+
+**Retrieval & Applied NLP:** ChromaDB · BM25 · Reciprocal Rank Fusion · Cross-Encoder Reranking · LLM-based verification
+
+**Data & Applications:** SQL · FastAPI · Streamlit · Jupyter
+
+**Languages:** Korean · English · Spanish · Kazakh
 
 ---
 
 ## 📂 Featured Projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **ESG Compliance Checker** | Hybrid RAG system for ESG disclosure search and verification, combining ChromaDB dense retrieval, BM25 keyword search, reciprocal rank fusion, GPT-based slot classification, Streamlit, and Docker. | ChromaDB · BM25 · RAG · LLM verifier · Streamlit · Docker |
-| **Cross-Lingual Representation Steering** | Multilingual LLM alignment research project investigating cross-lingual transfer of activation steering vectors for sycophancy reduction and reasoning behaviour analysis. | PyTorch · Hugging Face · CAA · Qwen2.5 · HPC |
-| **Cross-Lingual ESG Accountability** | Empirical NLP study analysing accountability attenuation in English-to-Korean ESG translation. | Python · NLP analysis · ESG |
-| **Cross-Lingual ESG News Analysis** | Sentiment and framing analysis of ESG news across languages, exploring how sustainability narratives shift across linguistic contexts. | Python · Jupyter · NLP |
-| **Freight Volume Prediction** | Published time-series forecasting project using LSTM models for freight volume prediction, achieving R² = 0.9538 through feature optimisation and sequence modelling. | PyTorch · LSTM · Time Series |
+### 🌐 Cross-Lingual Representation Steering
+
+Research on cross-lingual transfer of activation steering interventions across multilingual LLMs, studying how representation geometry relates to behavioural alignment effects.
+
+`PyTorch` · `Hugging Face` · `CAA` · `Multilingual NLP` · `SLURM` · `HPC`
+
+---
+
+### 📑 ESG Compliance Checker
+
+Evaluation-driven RAG system for ESG disclosure retrieval and compliance verification across corporate reports.
+
+* **Retrieval:** Hybrid dense + BM25 search with reciprocal rank fusion and cross-encoder reranking
+* **Verification:** Structured LLM-based classification of disclosure requirements with evidence validation
+* **Evaluation:** Curated retrieval gold set, annotation guidelines, retrieval ablations, and systematic error analysis
+* **Backend:** FastAPI API with Pydantic validation, structured logging, dependency management, and documented endpoints
+* **Interface & Infrastructure:** Streamlit · Docker · Git
+
+`RAG` · `BM25` · `ChromaDB` · `Cross-Encoder Reranking` · `LLM Evaluation` · `FastAPI` · `Docker`
+
+---
+
+### 🌏 Cross-Lingual ESG Accountability
+
+Empirical NLP study examining how accountability-related language changes in English-to-Korean ESG translation.
+
+`Python` · `Multilingual NLP` · `ESG`
+
+---
+
+### 📈 Freight Volume Prediction
+
+Published time-series forecasting research using LSTM models for freight volume prediction, achieving **R² = 0.9538** through feature optimisation and sequence modelling.
+
+`LSTM` · `Time Series` · `Python`
 
 ---
 
 ## 📄 Publication
 
-**Kim, M. (2023).** LSTM-based Freight Volume Forecasting. *ACK 2023.* — First Author.
+**Kim, M. (2023).** *LSTM-based Freight Volume Forecasting.* ACK 2023. — First Author
 
 ---
 
