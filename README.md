@@ -109,7 +109,6 @@ Published time-series forecasting research using LSTM models for freight volume 
 
 - **LinkedIn:** [Misun Kim](https://www.linkedin.com/in/misun-kim-nlp)
 - **Email:** misunkim2732@gmail.com
-- **GitHub:** [Ayana32](https://github.com/Ayana32)
 
 <!--
 **Ayana32/Ayana32** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
