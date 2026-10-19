@@ -21,7 +21,7 @@ I investigate **when we can trust LLM behaviour across languages and tasks**—f
 - **How:** Layer-wise evaluations, held-out sets, bootstrap confidence intervals, and Gaussian and permutation random-vector baselines on HPC.
 - **Follow-up:** Built a full **5×5 source–target transfer matrix** with **norm-matched controls** to distinguish source-vector effects from target-language responses. Joint manuscript in preparation (2027).
 
-[Research repository →](https://github.com/Ayana32/cross-lingual-caa) · [Dissertation and research notes →](https://ayana32.github.io/)
+[Research repository →](https://github.com/Ayana32/cross-lingual-caa)
 
 ### Multilingual Post-Training Safety Evaluation
 
@@ -93,7 +93,3 @@ First-author LSTM forecasting research that reduced RMSE by approximately **71% 
 ## 🌍 Languages
 
 Korean (Native) · English (Fluent) · Spanish (Intermediate) · Kazakh (Intermediate)
-
-## 📬 Contact
-
-[Research homepage](https://ayana32.github.io/) · [CV](https://ayana32.github.io/cv.html) · [LinkedIn](https://www.linkedin.com/in/misun-kim-nlp/) · [Email](mailto:misunkim2732@gmail.com)
