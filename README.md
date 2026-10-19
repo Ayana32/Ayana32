@@ -1,143 +1,99 @@
 # Hi, I'm Misun 👋
 
-**NLP / ML Engineer** focused on multilingual LLM evaluation, alignment, and applied AI systems.
+**Multilingual LLM Alignment & Evaluation | NLP Research | Applied AI**
 
-🎓 MSc Speech and Natural Language Processing @ University of Sheffield (2025–2026)
+🎓 MSc Speech and Natural Language Processing · University of Sheffield (2025–2026; final award pending, predicted Distinction)
 
----
+I investigate **when we can trust LLM behaviour across languages and tasks**—from the transfer of representation-level interventions to the reliability of multilingual safety evaluation. I also build reproducible NLP evaluation pipelines and evidence-grounded applied AI systems.
 
-## 🔍 About Me
-
-I build and evaluate NLP and machine learning systems, with particular depth in multilingual LLM evaluation and alignment.
-
-My MSc research at the University of Sheffield investigates how alignment interventions and model behaviours transfer across languages, combining activation steering with behavioural, representational, and statistical evaluation.
-
-Alongside research, I build applied AI systems spanning information retrieval, evidence-grounded LLM verification, evaluation pipelines, APIs, and reproducible ML infrastructure.
+🌐 [Research homepage](https://ayana32.github.io/) · [CV](https://ayana32.github.io/cv.html) · [LinkedIn](https://www.linkedin.com/in/misun-kim-nlp/) · [Email](mailto:misunkim2732@gmail.com)
 
 ---
 
-## 📊 Current Research
+## 🔍 Research Focus
 
-### Cross-Lingual LLM Alignment & Behaviour Evaluation
+### Cross-Lingual Activation Steering
 
-MSc research investigating whether alignment interventions derived in one language transfer reliably across languages, and how representational similarity relates to downstream behavioural effects.
+**Why:** English-derived steering interventions may not have comparable behavioural effects in other languages, even when representations appear similar.
 
-- **Method:** Contrastive Activation Addition (CAA)
-- **Models:** Three open-source LLM families
-- **Languages:** English · Italian · Chinese · Korean · Kazakh
-- **Evaluation:** Sycophancy · Cross-task transfer · Representation geometry
-- **Analysis:** Layer-wise steering sweeps · PCA · Cosine similarity · Bootstrap confidence intervals · Random/permutation controls
-- **Finding:** High cross-lingual representational similarity did not consistently translate into uniform behavioural transfer, revealing a representation–behaviour gap
-- **Infrastructure:** Python · PyTorch · Hugging Face Transformers · SLURM · Linux HPC
-- **Status:** Ongoing follow-up work toward publication
-- **Repository:** [`cross-lingual-caa`](https://github.com/Ayana32/cross-lingual-caa)
+- **MSc dissertation:** Evaluated Contrastive Activation Addition (CAA) across three open-weight LLM families and five languages (English, Italian, Chinese, Korean and Kazakh), studying sycophancy, truthfulness and representation–behaviour transfer.
+- **Finding:** High cross-lingual representational similarity did not reliably predict equivalent behavioural effects. A descriptive cross-task comparison showed differing patterns across Qwen and OLMo.
+- **How:** Layer-wise evaluations, held-out sets, bootstrap confidence intervals, and Gaussian and permutation random-vector baselines on HPC.
+- **Follow-up:** Built a full **5×5 source–target transfer matrix** with **norm-matched controls** to distinguish source-vector effects from target-language responses. Joint manuscript in preparation (2027).
+
+[Research repository →](https://github.com/Ayana32/cross-lingual-caa) · [Dissertation and research notes →](https://ayana32.github.io/)
+
+### Multilingual Post-Training Safety Evaluation
+
+**Why:** Improvements in safety behaviour measured in English may not transfer to Korean, and automated safety judges may not be equally reliable across languages.
+
+- **Evaluation:** 200 matched English/Korean prompts per language across OLMo 3 post-training checkpoints (SFT, DPO and RLVR).
+- **Finding:** Scorer-measured harmful-request refusal rates were approximately **80% in English versus 10% in Korean**, with a substantial gap persisting under human validation.
+- **Validation:** Stratified human review of **70 responses**, bootstrap and Bayesian uncertainty analysis; identified opposing patterns of safety-judge errors across languages.
+- **Engineering:** Reproducible, configuration-driven evaluation components, typed schemas, deterministic validation and GitHub Actions CI.
+
+[Safety evaluation repository →](https://github.com/Ayana32/multilingual-posttraining-eval)
 
 ---
 
 ## 🎯 Research Interests
 
-- Multilingual NLP and cross-lingual transfer
-- LLM alignment and model behaviour
-- Representation learning and steering
-- Multilingual model evaluation and reliability
-
----
+- Multilingual LLM safety, evaluation and cross-lingual transfer
+- Activation steering and representation engineering
+- Generalisation of alignment interventions across languages and tasks
+- Reliability of behavioural evaluation and LLM-as-judge systems
 
 ## 🛠️ Technical Skills
 
-**Machine Learning & NLP:** Python · PyTorch · Hugging Face Transformers · scikit-learn
+**Programming:** Python · SQL
 
-**LLM Evaluation & Research:** Multilingual evaluation · Representation steering · Activation analysis · Behavioural evaluation · Statistical evaluation
+**ML & NLP:** PyTorch · Hugging Face Transformers · scikit-learn
 
-**Retrieval & Applied AI:** BM25 · Dense Retrieval · Reciprocal Rank Fusion · Cross-Encoder Reranking · ChromaDB · Evidence-Grounded LLM Verification
+**LLM Alignment & Evaluation:** CAA · Representation analysis · Cross-lingual and cross-task evaluation · Post-training safety evaluation · LLM-as-judge validation · Human annotation and error analysis
 
-**Engineering & Infrastructure:** FastAPI · Pydantic · Docker · pytest · Git · GitHub Actions CI · SLURM · Linux · Cloud GPU Execution · Weights & Biases
+**Experimental Methods:** Controlled experiments · Bootstrap confidence intervals · Bayesian uncertainty analysis · Random-vector baselines
 
-**Data & Applications:** SQL · Streamlit · Jupyter
+**Retrieval & Applied AI:** BM25 · Dense retrieval · Reciprocal Rank Fusion · Cross-encoder reranking · ChromaDB · Evidence-grounded LLM verification
 
-**Languages:** Korean · English · Spanish · Kazakh
-
----
-
-## 📂 Featured Projects
-
-### 📑 ESG Compliance Checker — Applied RAG System
-
-Evidence-grounded applied NLP system for evaluating corporate sustainability reports against GRI 305 disclosure requirements.
-
-- **Retrieval:** Hybrid BM25 + dense retrieval with Reciprocal Rank Fusion and multilingual cross-encoder reranking over 7,703 indexed report chunks
-- **Evaluation:** 0.963 Hit@5 and 0.798 MRR on 27 manually reviewed retrieval queries; 84.6% accuracy on a separate 39-case fixed-evidence verifier benchmark
-- **Engineering:** Typed FastAPI/Pydantic backend · Streamlit frontend · Docker · 22 automated API/service/regression tests
-- **Design:** Retrieval and verifier evaluation separated to isolate system failure modes
-
-`RAG` · `Information Retrieval` · `Cross-Encoder Reranking` · `LLM Evaluation` · `FastAPI` · `Docker` · `pytest`
-
-[View repository →](https://github.com/Ayana32/esg-report-compliance-checker)
+**Engineering & Research Infrastructure:** HPC/SLURM · Linux · Weights & Biases · Git · GitHub Actions CI · Docker · FastAPI · Flask · Pydantic · pytest · Streamlit
 
 ---
 
-### 🧪 Multilingual LLM Safety Evaluation
+## 📂 Selected Projects
 
-Reusable evaluation framework for comparing multilingual LLM safety behaviour across post-training stages.
+### 🧪 [Multilingual LLM Safety Evaluation](https://github.com/Ayana32/multilingual-posttraining-eval)
+A reproducible research framework for comparing refusal behaviour across English and Korean after SFT, DPO and RLVR. Combines matched-prompt evaluation with human validation to examine both **model behaviour** and **safety-judge reliability**.
 
-- **Pipeline:** Configuration-driven Python evaluation with modular model, dataset, and scoring components
-- **Evaluation:** Parallel English–Korean testing across SFT, DPO, and RLVR checkpoints
-- **Engineering:** Typed schemas · Deterministic validation · GitHub Actions CI · Cloud GPU execution
-- **Pilot finding:** Harmful-request refusal was approximately 2.5–2.9× lower in Korean than English across all three evaluated post-training stages
+`LLM Evaluation` · `Multilingual Safety` · `Human Validation` · `PyTorch` · `GitHub Actions`
 
-`LLM Evaluation` · `Python` · `PyTorch` · `Software Development` · `GitHub Actions` · `Cloud GPU`
+### 🌐 [Cross-Lingual CAA Research](https://github.com/Ayana32/cross-lingual-caa)
+MSc dissertation and follow-up evaluation of activation-steering generalisation across three model families and five languages. Investigates the distinction between representation similarity and reliable behavioural transfer.
 
-[View repository →](https://github.com/Ayana32/multilingual-posttraining-eval)
+`Activation Steering` · `Representation Analysis` · `HPC/SLURM` · `Statistical Evaluation`
 
----
+### 📑 [ESG Compliance Checker](https://github.com/Ayana32/esg-report-compliance-checker)
+Evidence-grounded verification of corporate sustainability reports, mapping requirements to retrieved passages and traceable judgements over 11 reports. In the evaluation reported in my current CV, hybrid retrieval with reranking improved **Hit@5 from 83.3% to 100%** and **MRR from 0.628 to 0.819** compared with BM25-only retrieval.
 
-### 🌐 Cross-Lingual LLM Alignment & Behaviour Evaluation
+Built with hybrid retrieval, reranking, a manually annotated gold set, FastAPI, Streamlit, Docker and automated tests. Retrieval and verifier errors were analysed separately.
 
-Research on cross-lingual transfer of activation-steering interventions across three open-source LLM families and five languages.
+`RAG` · `Information Retrieval` · `LLM Verification` · `FastAPI` · `Docker`
 
-- **Method:** Contrastive Activation Addition (CAA)
-- **Evaluation:** Behavioural effects · Representation geometry · Bootstrap confidence intervals · Controlled baselines
-- **Finding:** High cross-lingual representational similarity did not consistently predict equivalent behavioural transfer
-- **Infrastructure:** PyTorch · Hugging Face Transformers · SLURM · Linux HPC · W&B
+### 📈 [Container Volume Prediction](https://github.com/Ayana32/Freight_Volume_Prediction)
+First-author LSTM forecasting research that reduced RMSE by approximately **71% relative to the baseline**. Published at ACK 2023.
 
-`PyTorch` · `Hugging Face` · `CAA` · `Multilingual NLP` · `Model Evaluation` · `HPC`
-
-[View repository →](https://github.com/Ayana32/cross-lingual-caa)
+`Time Series` · `LSTM` · `Python`
 
 ---
 
-### 📈 Container Volume Prediction — First-Author Research
+## 📄 Publications & Manuscripts
 
-First-author LSTM forecasting study using correlation-based feature selection on container-volume data, reducing test RMSE by approximately 71% compared with the broader-input baseline.
+- **Kim, M.**, Kim, Y., Kim, E., Lee, B., Han, Y., & Lee, G. (2023). *Implementation of Container Volume Prediction Technology using Deep Learning.* ACK Conference Proceedings, 30(2). **First author.**
+- *Cross-lingual and cross-task generalisation of representation-level interventions in multilingual LLMs.* **Manuscript in preparation (2027).**
 
-`LSTM` · `Time Series` · `Machine Learning` · `Python`
+## 🌍 Languages
 
-[View repository →](https://github.com/Ayana32/Freight_Volume_Prediction)
-
----
-
-## 📄 Publication
-
-**Kim, M. et al. (2023).** *Implementation of Container Volume Prediction Technology using Deep Learning.* ACK 2023. — **First Author**
-
----
+Korean (Native) · English (Fluent) · Spanish (Intermediate) · Kazakh (Intermediate)
 
 ## 📬 Contact
 
-- **LinkedIn:** [Misun Kim](https://www.linkedin.com/in/misun-kim-nlp)
-- **Email:** [misunkim2732@gmail.com](mailto:misunkim2732@gmail.com)
-
-<!--
-**Ayana32/Ayana32** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[Research homepage](https://ayana32.github.io/) · [CV](https://ayana32.github.io/cv.html) · [LinkedIn](https://www.linkedin.com/in/misun-kim-nlp/) · [Email](mailto:misunkim2732@gmail.com)
