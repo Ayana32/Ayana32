@@ -2,7 +2,8 @@
 
 **Multilingual LLM Alignment & Evaluation | NLP Research | Applied AI**
 
-🎓 MSc Speech and Natural Language Processing · University of Sheffield (2025–2026; final award pending, predicted Distinction)
+🎓 MSc Computer Science with Speech and Natural Language Processing · University of Sheffield (2025–2026)  
+**Distinction** · Credit-weighted average: **73.17/100** · Dissertation: **78/100**
 
 I investigate **when we can trust LLM behaviour across languages and tasks**—from the transfer of representation-level interventions to the reliability of multilingual safety evaluation. I also build reproducible NLP evaluation pipelines and evidence-grounded applied AI systems.
 
@@ -72,11 +73,11 @@ MSc dissertation and follow-up evaluation of activation-steering generalisation 
 `Activation Steering` · `Representation Analysis` · `HPC/SLURM` · `Statistical Evaluation`
 
 ### 📑 [ESG Compliance Checker](https://github.com/Ayana32/esg-report-compliance-checker)
-Evidence-grounded verification of corporate sustainability reports, mapping requirements to retrieved passages and traceable judgements over 11 reports. In the evaluation reported in my current CV, hybrid retrieval with reranking improved **Hit@5 from 83.3% to 100%** and **MRR from 0.628 to 0.819** compared with BM25-only retrieval.
+Evidence-grounded verification of corporate sustainability reports against GRI 305 emissions disclosures. On **27 manually reviewed queries across 11 reports**, hybrid retrieval with cross-encoder reranking achieved **96.3% Hit@5 (26/27)** and **0.798 MRR**. The verifier classified **33 of 39 cases correctly (84.6%)** in a separate fixed-evidence benchmark.
 
-Built with hybrid retrieval, reranking, a manually annotated gold set, FastAPI, Streamlit, Docker and automated tests. Retrieval and verifier errors were analysed separately.
+Built with FastAPI, Streamlit and Docker. A read-only MCP tool exposes company-filtered BM25 search and returns report passages with page references.
 
-`RAG` · `Information Retrieval` · `LLM Verification` · `FastAPI` · `Docker`
+`RAG` · `Information Retrieval` · `LLM Verification` · `MCP` · `FastAPI` · `Docker`
 
 ### 📈 [Container Volume Prediction](https://github.com/Ayana32/Freight_Volume_Prediction)
 First-author LSTM forecasting research that reduced RMSE by approximately **71% relative to the baseline**. Published at ACK 2023.
